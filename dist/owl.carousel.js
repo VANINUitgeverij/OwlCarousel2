@@ -1,6 +1,6 @@
 /**
  * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
+ * Copyright 2013-2019 David Deutsch
  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
  */
 /**
@@ -919,9 +919,9 @@
 
 		if (!this.settings.loop) {
 			// non loop boundries
-			if (this.op(coordinate, '>', coordinates[this.minimum()])) {
+			if (this.op(coordinate, '>=', coordinates[this.minimum()])) {
 				position = coordinate = this.minimum();
-			} else if (this.op(coordinate, '<', coordinates[this.maximum()])) {
+			} else if (this.op(coordinate, '<=', coordinates[this.maximum()])) {
 				position = coordinate = this.maximum();
 			}
 		}

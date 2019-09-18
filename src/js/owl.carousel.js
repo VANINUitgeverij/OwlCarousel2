@@ -914,9 +914,9 @@
 
 		if (!this.settings.loop) {
 			// non loop boundries
-			if (this.op(coordinate, '>', coordinates[this.minimum()])) {
+			if (this.op(coordinate, '>=', coordinates[this.minimum()])) {
 				position = coordinate = this.minimum();
-			} else if (this.op(coordinate, '<', coordinates[this.maximum()])) {
+			} else if (this.op(coordinate, '<=', coordinates[this.maximum()])) {
 				position = coordinate = this.maximum();
 			}
 		}
